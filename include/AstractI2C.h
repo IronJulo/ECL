@@ -1,0 +1,4 @@
+#ifndef ECL_ABSTRACT_I2C_H
+#define ECL_ABSTRACT_I2C_H
+
+#endif /* ECL_ABSTRACT_I2C_H */
