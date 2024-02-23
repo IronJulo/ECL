@@ -18,7 +18,8 @@ namespace ecl
         {
             m_state = this->start();
         }
-        ~Transaction() 
+
+        ~Transaction()
         {
             this->finish();
         }

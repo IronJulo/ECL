@@ -3,10 +3,10 @@
 
 #include <stdint.h>
 #include "Endianness.h"
-#include "Transaction.h"
 
 namespace ecl
 {
+    class Transaction;
     class Transport
     {
     private:
