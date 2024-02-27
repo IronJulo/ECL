@@ -10,41 +10,41 @@ namespace ecl
     {
         enum class Direction
         {
-            INPUT,
-            OUTPUT,
+            Input,
+            Output,
 
-            NOT_SET,
+            NotSet,
         };
 
         enum class State
         {
-            LOW,
-            HIGH,
+            Low,
+            High,
 
-            NOT_SET,
+            NotSet,
         };
 
         enum class Resistor
         {
-            PULLUP,
-            PULLDOWN,
-            OPEN_DRAIN,
-            ANALOG,
+            PullUp,
+            PullDown,
+            OpenDrain,
+            Analog,
 
-            NOT_SET,
+            NotSet,
         };
 
         enum class InterruptEdge
         {
-            RISING,
-            FALLING,
-            CHANGE,
-            ONLOW,
-            ONHIGH,
-            ONLOW_WE,
-            ONHIGH_WE,
+            Rising,
+            Falling,
+            Change,
+            OnLow,
+            OnHigh,
+            OnLowWe,
+            OnHighWe,
 
-            NOT_SET,
+            NotSet,
         };
 
         typedef void (*InterruptCallback)(void);
@@ -54,10 +54,10 @@ namespace ecl
     {
     private:
         Gpio::InterruptCallback m_callback = nullptr;
-        Gpio::InterruptEdge m_interruptEdge = Gpio::InterruptEdge::NOT_SET;
-        Gpio::Direction m_direction = Gpio::Direction::NOT_SET;
-        Gpio::Resistor m_resistor = Gpio::Resistor::NOT_SET;
-        Gpio::State m_state = Gpio::State::NOT_SET;
+        Gpio::InterruptEdge m_interruptEdge = Gpio::InterruptEdge::NotSet;
+        Gpio::Direction m_direction = Gpio::Direction::NotSet;
+        Gpio::Resistor m_resistor = Gpio::Resistor::NotSet;
+        Gpio::State m_state = Gpio::State::NotSet;
 
     public:
         AbstractGpio() = default;
