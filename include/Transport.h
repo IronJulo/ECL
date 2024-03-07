@@ -17,7 +17,7 @@ namespace ecl
         virtual ~Transport() = default;
 
         virtual bool lock() = 0;
-        virtual bool unLock() = 0;
+        virtual bool unlock() = 0;
 
     public:
         virtual void write(uint8_t data) = 0;

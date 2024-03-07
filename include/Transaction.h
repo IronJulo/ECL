@@ -27,7 +27,7 @@ namespace ecl
 
     private:
         inline bool start() { return this->m_transport.lock(); }
-        inline bool finish() { return this->m_transport.unLock(); }
+        inline bool finish() { return this->m_transport.unlock(); }
 
     public:
         inline void write(uint8_t data) { this->m_transport.write(data); }
